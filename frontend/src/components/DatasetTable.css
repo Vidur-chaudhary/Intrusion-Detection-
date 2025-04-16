@@ -1,0 +1,197 @@
+/* Container Styles */
+.dataset-container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Table Header */
+thead {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table Row Styling */
+tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #e9f5ff;
+  transition: 0.3s;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  transition: background 0.3s ease-in-out;
+}
+/* Ensure table takes full width */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow-x: auto; /* Enable horizontal scroll if needed */
+  display: block; /* Prevents column squeezing */
+}
+
+/* Ensure table wrapper allows scrolling */
+.dataset-container {
+  max-width: 100%;
+  overflow-x: auto; /* Enables horizontal scroll */
+}
+
+/* Table Header & Cells: Prevent column squeezing */
+th, td {
+  white-space: nowrap; /* Prevents text from wrapping */
+  min-width: 120px; /* Ensures columns have enough space */
+}
+
+/* Responsive Fix: For smaller screens */
+@media screen and (max-width: 768px) {
+  table {
+      display: block;
+      overflow-x: auto;
+  }
+  
+  th, td {
+      min-width: 150px; /* Increase width on small screens */
+  }
+}
+
+
+.pagination button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  th, td {
+      padding: 10px;
+  }
+  /* Ensure table takes full width */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    display: block; /* Prevents column squeezing */
+}
+
+/* Ensure table wrapper allows scrolling */
+.dataset-container {
+    max-width: 100%;
+    overflow-x: auto; /* Enables horizontal scroll */
+}
+
+/* Table Header & Cells: Prevent column squeezing */
+th, td {
+    white-space: nowrap; /* Prevents text from wrapping */
+    min-width: 120px; /* Ensures columns have enough space */
+}
+
+/* Responsive Fix: For smaller screens */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    th, td {
+        min-width: 150px; /* Increase width on small screens */
+    }
+}
+
+
+  .pagination button {
+      padding: 6px 10px;
+      font-size: 14px;
+  }
+}
+/* Controls Section */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.controls button, .controls select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.controls button:hover, .controls select:hover {
+  background-color: #0056b3;
+}
+
+.controls select {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
